@@ -9,6 +9,7 @@ nav {
   display: flex;
   justify-content: space-around;
 }
+
 .nav-list {
   display: flex;
   flex-direction: row;
@@ -38,72 +39,76 @@ nav {
   height: 100px;
   display: block;
   width: 20%;
-  -webkit-user-select: none;/*Pour que la propriété passe sur Safari et autres navigateurs*/
+  -webkit-user-select: none;
+  /*Pour que la propriété passe sur Safari et autres navigateurs*/
   user-select: none;
 }
 
 .hero {
-  background:url("./assets/hero-section.jpg");
-  background-repeat:no-repeat;
- height: 60vh;
+  background: url("./assets/hero-section.jpg");
+  background-repeat: no-repeat;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: inset 0 0 0 2000px rgba(35, 50, 86, 0.8);
   background-size: cover;
   background-color: rgb(35, 50, 86);
-  background-position: center center ;
+  background-position: center center;
 
-  }
-
-  
-
-h1{
-font-size: 4rem;
-color: whitesmoke;
-text-shadow: 0px 0px 4px black;
-padding: 40px;
-text-align: center;
 }
 
-h2{
-  text-align: left ;
+
+
+h1 {
+  font-size: 4rem;
+  color: whitesmoke;
+  text-shadow: 0px 0px 4px black;
+  padding: 40px;
+  text-align: center;
+}
+
+h2 {
+  text-align: left;
   margin: 60px;
   font-size: 2rem;
 }
-  p{
-    margin:0 60px 60px 60px;
-  }
 
-  .menu-bar {
-    width: 50px;
-   margin-top: 10px;
-     display: none;
-  }
-.mention{
+p {
+  margin: 0 60px 60px 60px;
+}
+
+.menu-bar {
+  width: 50px;
+  margin-top: 10px;
+  display: none;
+}
+
+.mention {
   font-size: 12px;
   font-style: italic;
 }
 
 @media screen and (max-width: 800px) {
-  .logo{
+  .logo {
     display: none;
   }
-    nav{
-width: 100%;
-justify-content: space-around;
-    }
 
-    .nav-list{
-      flex-wrap: wrap;
-      flex-direction: column;
-      width: 90%;
+  nav {
+    width: 100%;
+    justify-content: space-around;
+  }
 
-       
-    }
-    
-   
-  .nav-list-items{
+  .nav-list {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 90%;
+
+
+  }
+
+
+  .nav-list-items {
     text-align: center;
     width: 100%;
     margin: 0;
@@ -111,26 +116,26 @@ justify-content: space-around;
     line-height: 50px;
   }
 
-  .menu-bar{
+  .menu-bar {
     display: block;
     height: 20%;
-    
-    
-    
+
+
+
   }
 
   .active {
     display: block;
-   
-   }
 
-   h1{
+  }
+
+  h1 {
     font-size: 2rem;
-   
+
   }
 
-  h2{
-    font-size :1.5rem;
+  h2 {
+    font-size: 1.5rem;
   }
-  
+
 }
