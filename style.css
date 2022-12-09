@@ -85,6 +85,90 @@ h2{
   font-style: italic;
 }
 
+/*Royal family page*/
+
+.royal-family-title{
+font-size: 4rem;
+color: black;
+text-shadow: 0px 0px 4px black;
+padding: 40px;
+text-align: left;
+text-shadow: none;
+
+}
+
+.royal-family-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+  
+}
+
+
+/*
+.royal-family-container img {
+
+  object-fit: cover;
+  box-shadow: 5px 5px 15px black;
+  transition: transform .1s;
+  margin-top: 50px;
+}
+*/
+.member-card img {
+  width: 380px;
+ 
+  box-shadow: 5px 5px 15px black;
+  transition: transform .1s;
+  margin-top: 50px;
+  height: 550px;
+}
+
+.member-card{
+  width: auto;
+}
+
+.princess-picture{
+object-position: -342px;
+}
+
+.cover{
+  object-fit: cover;
+}
+
+.king-picture{
+  object-fit: fill;
+}
+
+.title-royal-container{
+  margin: 40px 60px 60px 60px;
+  padding: 31px;
+  border: 1px solid black;
+  background-color: black;
+  box-shadow: 5px 5px 20px black;
+  font-size: 20px;
+  box-sizing: border-box;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.title-royal-container:hover{
+  background-color: whitesmoke;
+  color: black;
+}
+
+
+.royal-family-container img:hover{
+  
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+    
+}
+
+
+
+
 @media screen and (max-width: 800px) {
   .logo{
     display: none;
@@ -132,5 +216,15 @@ justify-content: space-around;
   h2{
     font-size :1.5rem;
   }
-  
 }
+  /*Royal Family Page*/
+
+  @media screen and (max-width: 400px) {
+  
+    .member-card img{
+      width: 314px;
+    
+    }
+  
+
+  }

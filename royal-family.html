@@ -1,16 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta name="description" content="Website about the members of the Royal Family of Colchis">
+
+
+    <meta property="og:title" content="Website about the Royal Family of Colchis  | Royal Kingdom of Colchis ">
+    <meta property="og:description" content="Website about the Royal Family of Colchis">
+
+
+    <title>Royal Kingdom of Colchis</title>
+
 </head>
+
 <body>
+
+    <!-- Navigation Section-->
+    <header>
+        <nav>
+            <img class="logo" src="./assets/Royal-Family-logo.svg" alt="website logo" >
+            <img class="menu-bar" src="./assets/noun-menu-bar.svg" alt="menu bar" >
+            <ul class="nav-list">
+                <li class="nav-list-items">
+                    <a href="index.html" title="Homepage" class="nav-links">Home</a>
+                </li>
+                <li class="nav-list-items">
+                    <a href="royal-family.html" title="Page about Royal Family members" class="nav-links">Royal
+                        Family</a>
+                </li>
+                <li class="nav-list-items">
+                    <a href="royal-assets.html" title="Page about royal family assets" class="nav-links"> Assets</a>
+                </li>
+                <li class="nav-list-items">
+                    <a href="contact.html" title="Contact Page" class="nav-links">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <!-- Add this to a seperate page, e.g. royal-family.html
 			Images and text aligned next to each other -->
-            <h2>
-                The Royal Family
-              </h2>
+
+    <main>
+        <h1 class="royal-family-title">
+            The Royal Family
+        </h1>
+
+        <div class="royal-family-container">
+            <div class="member-card">
+                <img class="king-picture" src="./assets/king-photo.jpg" alt="King of Colchis">
+                <p class="title-royal-container">King Aetes</p>
+            </div>
+
+
+            <div class="member-card">
+                <img class="princess-picture cover" src="./assets/princess.jpg" alt="Princess of Colchis">
+                <p class="title-royal-container">Princess Madeas</p>
+            </div>
+
+            <div class="member-card cover">
+                <img src="./assets/queen-photo.jpg" alt="Queen of Colchis">
+                <p class="title-royal-container">Queen Idya</p>
+            </div>
+
+        </div>
+
+
+
+    </main>
+    <script src="script.js"></script>
 </body>
+
 </html>
