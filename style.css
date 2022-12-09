@@ -9,6 +9,7 @@ nav {
   display: flex;
   justify-content: space-around;
 }
+
 .nav-list {
   display: flex;
   flex-direction: row;
@@ -38,49 +39,52 @@ nav {
   height: 100px;
   display: block;
   width: 20%;
-  -webkit-user-select: none;/*Pour que la propriété passe sur Safari et autres navigateurs*/
+  -webkit-user-select: none;
+  /*Pour que la propriété passe sur Safari et autres navigateurs*/
   user-select: none;
 }
 
 .hero {
-  background:url("./assets/hero-section.jpg");
-  background-repeat:no-repeat;
- height: 60vh;
+  background: url("./assets/hero-section.jpg");
+  background-repeat: no-repeat;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: inset 0 0 0 2000px rgba(35, 50, 86, 0.8);
   background-size: cover;
   background-color: rgb(35, 50, 86);
-  background-position: center center ;
+  background-position: center center;
 
-  }
-
-  
-
-h1{
-font-size: 4rem;
-color: whitesmoke;
-text-shadow: 0px 0px 4px black;
-padding: 40px;
-text-align: center;
 }
 
-h2{
-  text-align: left ;
+
+
+h1 {
+  font-size: 4rem;
+  color: whitesmoke;
+  text-shadow: 0px 0px 4px black;
+  padding: 40px;
+  text-align: center;
+}
+
+h2 {
+  text-align: left;
   margin: 60px;
   font-size: 2rem;
 }
-  p{
-    margin:0 60px 60px 60px;
-  }
 
-  .menu-bar {
-    width: 50px;
-   margin-top: 10px;
-     display: none;
-  }
-.mention{
+p {
+  margin: 0 60px 60px 60px;
+}
+
+.menu-bar {
+  width: 50px;
+  margin-top: 10px;
+  display: none;
+}
+
+.mention {
   font-size: 12px;
   font-style: italic;
 }
@@ -170,24 +174,25 @@ object-position: -342px;
 
 
 @media screen and (max-width: 800px) {
-  .logo{
+  .logo {
     display: none;
   }
-    nav{
-width: 100%;
-justify-content: space-around;
-    }
 
-    .nav-list{
-      flex-wrap: wrap;
-      flex-direction: column;
-      width: 90%;
+  nav {
+    width: 100%;
+    justify-content: space-around;
+  }
 
-       
-    }
-    
-   
-  .nav-list-items{
+  .nav-list {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 90%;
+
+
+  }
+
+
+  .nav-list-items {
     text-align: center;
     width: 100%;
     margin: 0;
@@ -195,36 +200,263 @@ justify-content: space-around;
     line-height: 50px;
   }
 
-  .menu-bar{
+  .menu-bar {
     display: block;
     height: 20%;
-    
-    
-    
+
+
+
   }
 
   .active {
     display: block;
-   
-   }
 
-   h1{
+  }
+
+  h1 {
     font-size: 2rem;
-   
+
   }
 
-  h2{
-    font-size :1.5rem;
+  h2 {
+    font-size: 1.5rem;
   }
-}
-  /*Royal Family Page*/
-
-  @media screen and (max-width: 400px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   
-    .member-card img{
-      width: 314px;
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: center;
+  }
+  
+  .nav-list-items {
+    list-style-type: none;
+    line-height: 100px;
+    margin-right: 70px;
+  }
+  
+  .nav-links {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+  }
+  
+  .nav-links:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.5em;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 100px;
+    display: block;
+    width: 20%;
+    -webkit-user-select: none;
+    /*Pour que la propriété passe sur Safari et autres navigateurs*/
+    user-select: none;
+  }
+  
+  .hero {
+    background: url("./assets/hero-section.jpg");
+    background-repeat: no-repeat;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 2000px rgba(35, 50, 86, 0.8);
+    background-size: cover;
+    background-color: rgb(35, 50, 86);
+    background-position: center center;
+  
+  }
+  
+  
+  
+  h1 {
+    font-size: 4rem;
+    color: whitesmoke;
+    text-shadow: 0px 0px 4px black;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  h2 {
+    text-align: left;
+    margin: 60px;
+    font-size: 2rem;
+  }
+  
+  p {
+    margin: 0 60px 60px 60px;
+  }
+  
+  .menu-bar {
+    width: 50px;
+    margin-top: 10px;
+    display: none;
+  }
+  
+  .mention {
+    font-size: 12px;
+    font-style: italic;
+  }
+  
+  /*Royal family page*/
+  
+  .royal-family-title{
+  font-size: 4rem;
+  color: black;
+  text-shadow: 0px 0px 4px black;
+  padding: 40px;
+  text-align: left;
+  text-shadow: none;
+  
+  }
+  
+  .royal-family-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
     
+  }
+  
+  
+  /*
+  .royal-family-container img {
+  
+    object-fit: cover;
+    box-shadow: 5px 5px 15px black;
+    transition: transform .1s;
+    margin-top: 50px;
+  }
+  */
+  .member-card img {
+    width: 380px;
+   
+    box-shadow: 5px 5px 15px black;
+    transition: transform .1s;
+    margin-top: 50px;
+    height: 550px;
+  }
+  
+  .member-card{
+    width: auto;
+  }
+  
+  .princess-picture{
+  object-position: -342px;
+  }
+  
+  .cover{
+    object-fit: cover;
+  }
+  
+  .king-picture{
+    object-fit: fill;
+  }
+  
+  .title-royal-container{
+    margin: 40px 60px 60px 60px;
+    padding: 31px;
+    border: 1px solid black;
+    background-color: black;
+    box-shadow: 5px 5px 20px black;
+    font-size: 20px;
+    box-sizing: border-box;
+    color: whitesmoke;
+    text-align: center;
+  }
+  
+  .title-royal-container:hover{
+    background-color: whitesmoke;
+    color: black;
+  }
+  
+  
+  .royal-family-container img:hover{
+    
+      -ms-transform: scale(1.2); /* IE 9 */
+      -webkit-transform: scale(1.2); /* Safari 3-8 */
+      transform: scale(1.2);
+      
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 800px) {
+    .logo {
+      display: none;
     }
   
-
+    nav {
+      width: 100%;
+      justify-content: space-around;
+    }
+  
+    .nav-list {
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 90%;
+  
+  
+    }
+  
+  
+    .nav-list-items {
+      text-align: center;
+      width: 100%;
+      margin: 0;
+      display: none;
+      line-height: 50px;
+    }
+  
+    .menu-bar {
+      display: block;
+      height: 20%;
+  
+  
+  
+    }
+  
+    .active {
+      display: block;
+  
+    }
+  
+    h1 {
+      font-size: 2rem;
+  
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+    
   }
+  
+}
+}
+/*Royal Family Page*/
+
+@media screen and (max-width: 400px) {
+
+  .member-card img{
+    width: 314px;
+  
+  }
+
+
+}
