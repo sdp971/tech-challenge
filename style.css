@@ -1,13 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,500;1,600&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+font-family: 'Cormorant Garamond', serif;
+
+
 }
 
 nav {
-  width: 100%;
+  width: 100%;  
   display: flex;
   justify-content: space-around;
+ 
 }
 
 .nav-list {
@@ -15,6 +21,7 @@ nav {
   flex-direction: row;
   width: 80%;
   justify-content: center;
+    font-weight: 600;
 }
 
 .nav-list-items {
@@ -66,6 +73,8 @@ h1 {
   text-shadow: 0px 0px 4px black;
   padding: 40px;
   text-align: center;
+  font-style: italic;
+  font-weight: 600;
 }
 
 h2 {
@@ -76,6 +85,7 @@ h2 {
 
 p {
   margin: 0 60px 60px 60px;
+  font-weight: 500;
 }
 
 .menu-bar {
@@ -110,15 +120,7 @@ text-shadow: none;
 }
 
 
-/*
-.royal-family-container img {
 
-  object-fit: cover;
-  box-shadow: 5px 5px 15px black;
-  transition: transform .1s;
-  margin-top: 50px;
-}
-*/
 .member-card img {
   width: 380px;
  
@@ -359,25 +361,27 @@ object-position: -342px;
 .royal-asset-title{
   text-align: left;
   margin: 60px;
-  font-size: 2rem
+  font-size: 4rem
 }
 
 .content-table{
   border-collapse: collapse;
   margin: 25px 0;
   font-size: 0.9em;
-  min-width: 600px;
-  margin: 0 auto;
+min-width: 900px;
+  margin-left: 60px;
   border-radius: 5px 5px 0 0;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  
+    
   
 }
 
 .content-table thead  tr{
   background-color: black;
   color:whitesmoke ;
-  text-align: left;
+  text-align: center;
   font-weight: bold;
 }
 
@@ -388,6 +392,7 @@ padding: 12px 15px;
 
 .content-table tbody tr{
   border-bottom: 1px solid #dddddd;
+  text-align: center;
 }
 
 .content-table tbody tr:nth-of-type(even){
@@ -401,4 +406,45 @@ padding: 12px 15px;
 .content-table tr:hover td{
   background: black !important;
   color: whitesmoke;
+}
+
+/* Contact page */
+
+form{
+display: flex;
+  flex-direction: column;
+  
+  margin-left: 40px;
+  margin-right: 40px;
+  font-family: inherit;
+  margin-bottom: 60px;
+  
+}
+
+
+
+body>form:nth-child(4)>label:nth-child(3),
+ label:nth-child(1),
+ label:nth-child(5){
+  margin-top: 10px;
+}
+
+body>form:nth-child(4)>input:nth-child(7) {
+  margin-top: 10px;
+  width: 100px;
+  padding: 5px;
+  margin-left: auto;
+  box-shadow: 5px 5px 2px black;
+    
+}
+
+body>form:nth-child(4)>input:nth-child(7):hover{
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+    
+}
+
+#email,#name{
+  height: 28px;
 }
