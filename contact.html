@@ -1,18 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta name="description" content="Fill in the form to contact the Royal Kindom family of Colchis">
+
+
+    <meta property="og:title" content="Contact page  | Royal Kingdom of Colchis ">
+    <meta property="og:description" content="Fill in the form to contact the Royal Kindom family of Colchis">
+
+
+    <title>Contact page</title>
 </head>
+
 <body>
-   <!-- Add this to a seperate page, e.g. contact.html
-    <!-- Contact the Royal Kingdom -->
+
+    <header>
+        <nav>
+            <img class="logo" src="./assets/Royal-Family-logo.svg" alt="website logo">
+            <img class="menu-bar" src="./assets/noun-menu-bar.svg" alt="menu bar">
+            <ul class="nav-list">
+                <li class="nav-list-items">
+                    <a href="index.html" title="Homepage" class="nav-links">Home</a>
+                </li>
+                <li class="nav-list-items">
+                    <a href="royal-family.html" title="Page about Royal Family members" class="nav-links">Royal
+                        Family</a>
+                </li>
+                <li class="nav-list-items">
+                    <a href="royal-assets.html" title="Page about royal family assets" class="nav-links"> Assets</a>
+                </li>
+                <li class="nav-list-items">
+                    <a href="contact.html" title="Contact Page" class="nav-links">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1 class="royal-family-title">Contact the Royal Kingdom</h1>
+    </main>
+
     <p>
-        Fill in the form below to contact the Royal Kingdom
-      </p>
-      Name... Email... Message... Submit...
-   
+        Fill in the form below to contact the Royal Kingdom.
+    </p>
+
+    <form action="#">
+
+
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+
+
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email">
+
+
+
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10">Write your message here</textarea>
+
+
+        <input type="submit" value="Submit" id="submit" aria-label="submit button">
+
+
+
+    </form>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
